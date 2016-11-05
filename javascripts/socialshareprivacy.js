@@ -19,7 +19,7 @@
 
 	/*
 	 * helper functions
-	 */ 
+	 */
 
 	/**
 	 * Build an absolute url using a base url.
@@ -43,7 +43,7 @@
 		else if (url.slice(0,2) === '//') {
 			return /^[^:]+:/.exec(base)[0]+url;
 		}
-		
+
 		var ch = url.charAt(0);
 		if (ch === '/') {
 			if (/^file:/i.test(base)) {
@@ -74,7 +74,7 @@
 				base = match[1];
 				path = match[2]||"/";
 			}
-		
+
 			path = path.split("/");
 			path.pop();
 			if (path.length === 0) {
@@ -174,7 +174,7 @@
 		IFRAME : 'src',
 		LINK   : 'href'
 	};
-	
+
 	// find the largest image of the website
 	// if no image at all is found use googles favicon service, which
 	// defaults to a small globe (so there is always some image)
@@ -209,7 +209,7 @@
 		// browser makes src absolute:
 		return imgs[0].src;
 	}
-	
+
 	// abbreviate at last blank before length and add "\u2026" (horizontal ellipsis)
 	function abbreviateText (text, length) {
 		// length of UTF-8 encoded string
@@ -229,7 +229,7 @@
 		}
 		return abbrev + "\u2026";
 	}
-	
+
 	var HTML_CHAR_MAP = {
 		'<': '&lt;',
 		'>': '&gt;',
@@ -364,7 +364,7 @@
 		}, 500);
 		$settings.data('timeout_id', timeout_id);
 	}
-	
+
 	function leaveSettingsInfo () {
 		var $settings = $(this);
 		var timeout_id = $settings.data('timeout_id');
@@ -377,7 +377,7 @@
 	function setPermaOption (service_name, options) {
 		$.cookie('socialSharePrivacy_'+service_name, 'perma_on', options.cookie_expires, options.cookie_path, options.cookie_domain);
 	}
-	
+
 	function delPermaOption (service_name, options) {
 		$.cookie('socialSharePrivacy_'+service_name, null, -1, options.cookie_path, options.cookie_domain);
 	}
@@ -385,7 +385,7 @@
 	function getPermaOption (service_name, options) {
 		return !!options.get_perma_options(options)[service_name];
 	}
-	
+
 	function getPermaOptions (options) {
 		var cookies = $.cookie();
 		var permas = {};
@@ -448,7 +448,7 @@
 							}
 						});
 						return disabled;
-	
+
 					default:
 						throw new Error("socialSharePrivacy: unknown command: "+command);
 				}
@@ -693,14 +693,14 @@
 									alt: service.dummy_alt,
 									src: service.path_prefix + service[dummy_img]
 								}));
-					
+
 						$help_info.find('.dummy_btn img.privacy_dummy, span.switch').click(
 							buttonClickHandler(service_name));
 					}
 					$context.append($help_info);
 				}
 			}
-			
+
 			//
 			// append Info/Settings-area
 			//
@@ -793,7 +793,7 @@
 		'cookie_domain'     : document.location.hostname,
 		'cookie_expires'    : 365,
 		'path_prefix'       : '',
-		'css_path'          : "stylesheets/socialshareprivacy.css",
+		'css_path'          : "css/socialshareprivacy.css",
 		'uri'               : getURI,
 		'language'          : 'en',
 		'ignore_fragment'   : true

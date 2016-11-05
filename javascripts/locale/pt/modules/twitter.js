@@ -16,8 +16,8 @@
 
 
 jQuery.extend(jQuery.fn.socialSharePrivacy.settings.services.twitter, {
-	'dummy_line_img'    : 'images/pt/dummy_twitter.png',
-	'dummy_box_img'     : 'images/pt/dummy_box_twitter.png',
+	'dummy_line_img'    : 'img/SocialSharePrivacy/pt/dummy_twitter.png',
+	'dummy_box_img'     : 'img/SocialSharePrivacy/pt/dummy_box_twitter.png',
 	'txt_info' : 'Dois cliques para mais privacidade: o bot&atilde;o do Twitter ser&aacute; ativado quando voc&ecirc; clicar aqui. Ativar este bot&atilde;o enviar&aacute; dados ao Twitter &ndash; veja <em>i</em>.',
 	'txt_off'  : 'n&atilde;o conectado ao Twitter',
 	'txt_on'   : 'conectado ao Twitter'

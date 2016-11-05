@@ -29,8 +29,8 @@
 
 	$.fn.socialSharePrivacy.settings.services.disqus = {
 		'status'            : true,
-		'dummy_line_img'    : 'images/dummy_disqus.png',
-		'dummy_box_img'     : 'images/dummy_box_disqus.png',
+		'dummy_line_img'    : 'img/SocialSharePrivacy/dummy_disqus.png',
+		'dummy_box_img'     : 'img/SocialSharePrivacy/dummy_box_disqus.png',
 		'dummy_alt'         : '"Disqus"-Dummy',
 		'txt_info'          : 'Two clicks for more privacy: The Disqus button will be enabled once you click here. Activating the button already sends data to Disqus &ndash; see <em>i</em>.',
 		'txt_off'           : 'not connected to Disqus',

@@ -11,8 +11,8 @@
 
 	$.fn.socialSharePrivacy.settings.services.hackernews = {
 		'status'            : true,
-		'dummy_line_img'    : 'images/dummy_hackernews.png',
-		'dummy_box_img'     : 'images/dummy_box_hackernews.png',
+		'dummy_line_img'    : 'img/SocialSharePrivacy/dummy_hackernews.png',
+		'dummy_box_img'     : 'img/SocialSharePrivacy/dummy_box_hackernews.png',
 		'dummy_alt'         : '"Hacker News"-Dummy',
 		'txt_info'          : 'Two clicks for more privacy: The Hacker News button will be enabled once you click here. Activating the button already sends data to Hacker News &ndash; see <em>i</em>.',
 		'txt_off'           : 'not connected to Hacker News',

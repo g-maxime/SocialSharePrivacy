@@ -15,8 +15,8 @@
  */
 
 jQuery.extend(jQuery.fn.socialSharePrivacy.settings.services.facebook, {
-	'dummy_line_img' : 'images/es/dummy_facebook.png',
-	'dummy_box_img'  : 'images/es/dummy_box_facebook.png',
+	'dummy_line_img' : 'img/SocialSharePrivacy/es/dummy_facebook.png',
+	'dummy_box_img'  : 'img/SocialSharePrivacy/es/dummy_box_facebook.png',
 	'txt_info'       : 'Dos Clics para mayor privacidad: Al dar clic, se activar&aacute; el bot&oacute;n de Facebook. Una vez activado, datos ser&aacute;n enviados a Facebook. Para mayor informaci&oacute;n ver el icono <em>i</em>',
 	'txt_off'        : 'sin conexi&oacute;n a Facebook',
 	'txt_on'         : 'conectado a Facebook'
