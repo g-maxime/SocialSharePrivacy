@@ -121,7 +121,7 @@
 .social_share_privacy_area li .help_info.icon {
     background: #fff url(../images/socialshareprivacy_info.png) no-repeat center center scroll;
     width: 25px;
-    height: 20px;
+    height: 18px;
     position: relative;
     display: inline-block;
 	vertical-align: top;
@@ -186,7 +186,7 @@
 	display: inline-block;
 	background: #fff url(../images/settings.png) no-repeat center center scroll;
 	width: 25px;
-	height: 20px;
+	height: 18px;
 	border: 2px solid #e7e3e3;
 	-moz-border-radius: 0 5px 5px 0;
 	-webkit-border-radius: 0 5px 5px 0;
