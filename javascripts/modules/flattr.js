@@ -23,7 +23,8 @@
 	var langs = {en:true,sq:true,ar:true,be:true,bg:true,ca:true,zh:true,hr:true,cs:true,da:true,nl:true,eo:true,et:true,fi:true,fr:true,es:true,de:true,el:true,iw:true,hi:true,hu:true,is:true,'in':true,ga:true,it:true,ja:true,ko:true,lv:true,lt:true,mk:true,ms:true,mt:true,no:true,nn:true,fa:true,pl:true,pt:true,ro:true,ru:true,sr:true,sk:true,sl:true,sv:true,th:true,tr:true,uk:true,vi:true};
 
 	$.fn.socialSharePrivacy.settings.services.flattr = {
-		'status'            : true, 
+		'status'            : true,
+		'uri'               : '',
 		'button_class'      : 'flattr',
 		'dummy_line_img'    : 'images/dummy_flattr.png',
 		'dummy_box_img'     : 'images/dummy_box_flattr.png',
@@ -42,6 +43,7 @@
 		'popout'            : '',
 		'hidden'            : '',
 		'button'            : function (options, uri, settings) {
+			uri = options.uri !== '' ? options.uri : uri;
 			var attrs = {
 				href                   : uri + options.referrer_track,
 				title                  : get(this, options, uri, settings, 'title')

@@ -20,6 +20,7 @@
 
 	$.fn.socialSharePrivacy.settings.services.facebook = {
 		'status'            : true,
+		'uri'               : '',
 		'button_class'      : 'fb_like',
 		'dummy_line_img'    : 'images/dummy_facebook.png',
 		'dummy_box_img'     : 'images/dummy_box_facebook.png',
@@ -34,6 +35,7 @@
 		'colorscheme'       : 'light',
 		'font'              : '',
 		'button'            : function (options, uri, settings) {
+			uri = options.uri !== '' ? options.uri : uri;
 			// ensure a locale that is supported by facebook
 			// otherwise facebook renders nothing
 			var match = /^([a-z]{2})_([A-Z]{2})$/.exec(options.language);
